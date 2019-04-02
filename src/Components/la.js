@@ -16661,4 +16661,4 @@ const la = {
   }
 }
 
-export la;
+export default la;
