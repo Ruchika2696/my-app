@@ -9,6 +9,7 @@ import {
 import Details from './Details.js';
 import la from './la.js';
 import asthamaData from './asthamaData.js';
+import './los_Angeles.css';
 
 const wrapperStyles = {
     width: "100%",
@@ -39,7 +40,7 @@ class LosAngeles extends Component {
     
     render() {
         return (
-            <div>
+            <div className="first-page">
                 <div><h1>Welcome to Los Angeles. Click on the region to know about percentage of 18+ population having Asthama Condition.</h1></div>
                 <div style={wrapperStyles}>
                     <ComposableMap

@@ -10,10 +10,10 @@ class App extends Component {
         return (
     <HashRouter basename='/'>
                 <Switch>
-                    <Route path='/' component={LosAngeles} exact />
-                    <Route path='/details' component={Details} />
+                    <Route path='/' component={LosAngeles} exact /> //home page set to LosAngeles component
+                    <Route path='/details' component={Details} /> //path to Details component
                     
-                    <Route component={Error} /> 
+                    <Route component={Error} /> //handles invalid path
                 </Switch>
 
             </HashRouter>
