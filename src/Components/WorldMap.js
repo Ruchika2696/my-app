@@ -23,7 +23,7 @@ class WorldMap extends Component {
 
     showDetail(j){
         // console.log(j); 
-        fetch('/asthamaData.json')
+        fetch('%PUBLIC_URL%/asthamaData.json')
         .then((res) => res.json())
         .then((data) => {
 
@@ -57,7 +57,7 @@ class WorldMap extends Component {
                     >
           
                         <ZoomableGroup center={[0,20]}>
-                           <Geographies geography={ "/la.json" }>
+                           <Geographies geography={ "%PUBLIC_URL%/la.json" }>
                                 {(geographies, projection) => geographies.map((geography, i) => (
                                      <Geography
                                         key={ i }
