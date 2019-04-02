@@ -24,19 +24,16 @@ class WorldMap extends Component {
     }
 
     showDetail(j){
-        // console.log(j); 
-        //fetch({asthamaData})
-        //.then((res) => res.json())
-        //.then((data) => {
-        console.log(asthamaData[j]);
-        // console.log('data:', data[j]);  //incase one wants to know the %value in log
+        //incase one wants to know the %value in log
+        //console.log(asthamaData[j]);
+         
         this.props.history.push({
           pathname:"/details",
           state:{
               key:asthamaData[j]
               }
 
-         //})
+         
         })    
     }
     
