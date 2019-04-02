@@ -17,8 +17,8 @@ npm -v
 
 ### 3) Run the following commands.
 
-'''
+```
 npm start
-''' 
+```
 
  
