@@ -8,7 +8,7 @@ import WorldMap from './Components/WorldMap.js'
 class App extends Component {
     render() {
         return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <Route path='/' component={WorldMap} exact />
                     <Route path='/details' component={Details} />
@@ -18,6 +18,6 @@ class App extends Component {
 
             </BrowserRouter>
             )}
-                    }
+}
 
 export default App;
