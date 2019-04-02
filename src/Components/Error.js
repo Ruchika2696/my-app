@@ -1,4 +1,4 @@
-//Loaded when one tries to manually go to invalid url
+//Loaded when one tries to go to invalid url
 import React from "react";
 
 const Error = () =>{

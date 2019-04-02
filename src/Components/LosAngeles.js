@@ -16,7 +16,7 @@ const wrapperStyles = {
     margin: "0 auto",
 }
 
-class WorldMap extends Component {
+class LosAngeles extends Component {
     handleClick(event){        
        // console.log(event.properties.ZIPCODE); //incase one wants to know the zip code
         this.showDetail(event.properties.ZIPCODE);
@@ -95,4 +95,4 @@ class WorldMap extends Component {
     }
 }
 
-export default WorldMap
+export default LosAngeles

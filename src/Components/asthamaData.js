@@ -1,3 +1,5 @@
+//JSON depicting percentage of 18 and older population with Asthma conditions residing in corresponding zipcode area is
+
 const asthamaData = {
 
     "90001": 9.6,

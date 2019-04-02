@@ -1,3 +1,4 @@
+// A topoJSON file for Los Angeles zipcode boundaries
 const la = {
   "type": "Topology",
   "arcs": [
