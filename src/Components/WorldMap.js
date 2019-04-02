@@ -63,11 +63,11 @@ class WorldMap extends Component {
                                         key={ i }
                                         geography={ geography }
                                         projection={ projection }
-                                        onClick={ this.handleClick.bind(this) } 
+                                        onClick={ this.handleClick.bind(this) } //geography.properties.ZIPCODE
                                         style={{
                                              default: {
-                                                //to have different colors in different regions.
-                                                fill: "#"+(122911+(i*928)),
+                                                //to have different colors in different regions, I am using the zipcodes.
+                                                 fill: "#"+((geography.properties.ZIP -60000)*10),
                                                 stroke: "#607D8B", //border color
                                                 strokeWidth: 0.25,
                                                 outline: "none",
