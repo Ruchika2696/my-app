@@ -16677,7 +16677,7 @@ const la = {
     }
 }
 
-const asthamaData {
+const asthamaData = {
 
     "90001": 9.6,
     "90002": 10.3,
