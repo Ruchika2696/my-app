@@ -8,6 +8,7 @@ import {
   } from "react-simple-maps";
 import Details from './Details.js';
 import la from './la.js';
+import asthamaData from './asthamaData.js';
 
 const wrapperStyles = {
     width: "100%",
@@ -24,18 +25,18 @@ class WorldMap extends Component {
 
     showDetail(j){
         // console.log(j); 
-        fetch('/asthamaData.json')
-        .then((res) => res.json())
-        .then((data) => {
-
+        //fetch({asthamaData})
+        //.then((res) => res.json())
+        //.then((data) => {
+        console.log(asthamaData[j]);
         // console.log('data:', data[j]);  //incase one wants to know the %value in log
         this.props.history.push({
           pathname:"/details",
           state:{
-              key:data[j]
+              key:asthamaData[j]
               }
 
-         })
+         //})
         })    
     }
     
