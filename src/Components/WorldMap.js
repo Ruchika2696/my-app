@@ -7,7 +7,7 @@ import {
   Geography,
   } from "react-simple-maps";
 import Details from './Details.js';
-import la from './la,js';
+import la from './la.js';
 
 const wrapperStyles = {
     width: "100%",
