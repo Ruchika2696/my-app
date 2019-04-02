@@ -1,3 +1,8 @@
-.first-page{
-    background-color: aquamarine;
+.first-page {
+    background-image: url("https://cdn.inspirationhut.net/wp-content/uploads/2013/05/201.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.first-page::before{
+    opacity:-0.1;
 }

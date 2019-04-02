@@ -41,7 +41,8 @@ class LosAngeles extends Component {
     render() {
         return (
             <div className="first-page">
-                <div><h1>Welcome to Los Angeles. Click on the region to know about percentage of 18+ population having Asthama Condition.</h1></div>
+                <div><h1>Welcome to Los Angeles!!</h1></div>
+                <div><h2>Click on the region to know about percentage of 18+ population having Asthama Condition.</h2></div>
                 <div style={wrapperStyles}>
                     <ComposableMap
                         projectionConfig={{
@@ -49,25 +50,26 @@ class LosAngeles extends Component {
                         rotation: [-11,0,0],
                         }}
                         width={980}
-                        height={551}
+                        height={951}
                         style={{
                             width: "100%",
-                            height: "auto",
+                            height: "100%",
                         }}
                     >
           
-                        <ZoomableGroup center={[0,20]}>
+                        <ZoomableGroup >
                            <Geographies geography={ la }>
                                 {(geographies, projection) => geographies.map((geography, i) => (
                                      <Geography
                                         key={ i }
                                         geography={ geography }
+                                        asthama = { asthamaData }
                                         projection={ projection }
                                         onClick={ this.handleClick.bind(this) } //geography.properties.ZIPCODE
                                         style={{
                                              default: {
-                                                //to have different colors in different regions, I am using the zipcodes.
-                                                 fill: "#"+((geography.properties.ZIP -60000)*10),
+                                                //to have different colors in different regions, I am using the the asthama values. Darker color means more people and lighter means less.
+                                                 fill: "#"+((asthamaData[geography.properties.ZIP]*10)+119990),
                                                 stroke: "#607D8B", //border color
                                                 strokeWidth: 0.25,
                                                 outline: "none",

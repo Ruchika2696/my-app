@@ -11,11 +11,18 @@ node -v
 npm -v
 ```
 
-#### If you do not have it installed go [HERE](https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm)
+#### If you do not have npm installed go [HERE](https://www.npmjs.com/get-npm) and if you do not have node installed go [HERE](https://nodejs.org/en/download/)
 
-### 2) Clone the Repository
+### 2) Clone the Repository and run:
+```
+cd my-app
+```
 
 ### 3) Run the following commands.
+
+```
+npm install
+```
 
 ```
 npm start

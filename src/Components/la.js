@@ -14405,8 +14405,8 @@ const la = {
     ]
   ],
   "transform": {
-    "scale": [ 0.0059000360003600037, 0.004599995860333201 ],
-    "translate": [ -10, -98.60903777459767 ]
+    "scale": [ 0.0059800360003600037, 0.004378995860333201 ],
+    "translate": [ -50, -90.08100000000000 ]
   },
   "objects": {
     "Intersect_of_City_Boundary_and_Zip_Codes_LA_County": {
