@@ -11,7 +11,7 @@ node -v
 npm -v
 ```
 
-#### If you do not have it installed go [HERE] (https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm)
+#### If you do not have it installed go [HERE](https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm)
 
 ### 2) Clone the Repository
 
