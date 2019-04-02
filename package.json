@@ -2,7 +2,6 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ruchika2696.github.io/my-app",
   "dependencies": {
     "d3": "^5.9.2",
     "d3-geo": "^1.11.3",
@@ -17,8 +16,6 @@
     "topojson-client": "^3.0.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
