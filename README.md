@@ -1,6 +1,7 @@
 # Depiction of Los Angeles boundaries based on Zip Codes and corresponding data about adults with Asthama
 ## Please Follow The Given Steps To Reproduce The Example
 
+### This project uses npm version 6.7.0 and node version v11.12.0
 
 ### 1) Install npm and node if you do not have. To check, run:
 ```
