@@ -43,6 +43,7 @@ class LosAngeles extends Component {
             <div className="first-page">
                 <div><h1>Welcome to Los Angeles!!</h1></div>
                 <div><h2>Click on the region to know about percentage of 18+ population having Asthama Condition.</h2></div>
+                <div><h3>Darker color represents larger proportion of people with asthama condition.</h3></div>
                 <div style={wrapperStyles}>
                     <ComposableMap
                         projectionConfig={{
