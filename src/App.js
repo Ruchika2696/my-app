@@ -6,9 +6,15 @@ import Details from './Components/Details.js';
 import WorldMap from './Components/WorldMap.js'
 
 class App extends Component {
+    const history = createHistory({
+        basename: process.env.PUBLIC_URL,
+    });
+        const store = configureStore({ history });
     render() {
+       
         return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <Provider store={store}>
+    <ConnectedRouter history={history}>
                 <Switch>
                     <Route path='/' component={WorldMap} exact />
                     <Route path='/details' component={Details} />
@@ -16,7 +22,8 @@ class App extends Component {
                     <Route component={Error} /> 
                 </Switch>
 
-            </BrowserRouter>
+            </ConnectedRouter>
+    </Provider>
             )}
 }
 
